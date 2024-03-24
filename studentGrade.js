@@ -1,3 +1,6 @@
+const marks = prompt("Enter your Grade:")
+userGrade(marks)
+
 // A > 79, B - 60 to 79, C -  49 to 59, D - 40 to 49, E - less 40
 function userGrade(userInput){
     let finalGrade = "E";
@@ -13,6 +16,5 @@ function userGrade(userInput){
         finalGrade = "A";
     }
     return finalGrade;
-    console.log(finalGrade);
-
 }
+document.getElementaryId("response").innerHTML =finalGrade;
